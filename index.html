@@ -2425,7 +2425,16 @@
             }
             .impact-gallery-grid .gallery-card[style*="grid-column"] {
                 grid-column: 1 !important;
-                grid-template-columns: 1fr !important;
+                display: block !important;
+            }
+            .impact-gallery-grid .gallery-card[style*="grid-column"] > img {
+                width: 100% !important;
+                height: 300px !important;
+                object-fit: cover !important;
+                display: block;
+            }
+            .impact-gallery-grid .gallery-card[style*="grid-column"] > .gallery-card-body {
+                padding: 1.5rem !important;
             }
         }
 
